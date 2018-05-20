@@ -26,6 +26,7 @@
 		B088B2D620B110C000A3EF3F /* AISKView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AISKView.m; sourceTree = "<group>"; };
 		B088B2DB20B11B8D00A3EF3F /* gu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gu.mp3; sourceTree = "<group>"; };
 		B088B2DC20B11B8D00A3EF3F /* crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crash.wav; sourceTree = "<group>"; };
+		B088B2E220B19E2500A3EF3F /* AISKDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AISKDefine.h; sourceTree = "<group>"; };
 		B0A2E0F420AFC3820066A98A /* AISnake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AISnake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A2E0F720AFC3820066A98A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0A2E0F820AFC3820066A98A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +68,14 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		B088B2E120B19E1500A3EF3F /* AISKDef */ = {
+			isa = PBXGroup;
+			children = (
+				B088B2E220B19E2500A3EF3F /* AISKDefine.h */,
+			);
+			path = AISKDef;
+			sourceTree = "<group>";
+		};
 		B0A2E0EB20AFC3820066A98A = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +95,7 @@
 		B0A2E0F620AFC3820066A98A /* AISnake */ = {
 			isa = PBXGroup;
 			children = (
+				B088B2E120B19E1500A3EF3F /* AISKDef */,
 				B088B2D820B11B8D00A3EF3F /* Resource */,
 				B088B2D420B1108D00A3EF3F /* SnakeView */,
 				B0A2E10D20AFCE880066A98A /* SnakeNode */,
