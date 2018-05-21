@@ -167,7 +167,7 @@ typedef NS_ENUM(NSUInteger, AISKOrient) {
                                                              PointY:arc4random() % HEIGHT];
             
             // 如果新产生的食物点，没有位于蛇身体上
-            if(![self.skNodeArr containsObject:newFoodPoi]) {
+            if(![self containsAISKNode:newFoodPoi]) {
                 self.foodPoi = newFoodPoi;
                 // 成功生成了食物的位置，跳出循环
                 break;
@@ -209,7 +209,7 @@ typedef NS_ENUM(NSUInteger, AISKOrient) {
     for (AISKNode* node in self.skNodeArr) {
 //        NSLog(@"headNode.pointX %ld",headNode.pointX);
 //        NSLog(@"headNode.pointY %ld",headNode.pointY);
-//        
+//
 //        NSLog(@"node.pointX %ld",node.pointX);
 //        NSLog(@"node.pointY %ld",node.pointY);
         
