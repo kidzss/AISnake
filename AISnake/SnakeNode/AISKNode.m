@@ -13,8 +13,8 @@
 - (id)initWithPointX:(NSInteger)x PointY:(NSInteger)y {
     self = [super init];
     if (self) {
-        _pointX = x;
-        _pointY = y;
+        self.pointX = x;
+        self.pointY = y;
     }
     return self;
 }

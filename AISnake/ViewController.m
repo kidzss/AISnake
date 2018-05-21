@@ -73,13 +73,13 @@ typedef NS_ENUM(NSUInteger, AISKOrient) {
 
 - (void)gameStart {
     self.skNodeArr = [NSMutableArray array];
-    for (NSInteger i=0; i<5; i++) {
+    for (NSInteger i=0; i<NODE_COUNT; i++) {
         AISKNode *node = [[AISKNode alloc] initWithPointX:i PointY:0];
         [self.skNodeArr addObject:node];
     }
     // 定义蛇的初始移动方向
     self.orient = kAISKRight;
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:TIME target:self
                                                 selector:@selector(snakeMove) userInfo:nil repeats:YES];
 }
 
@@ -129,7 +129,7 @@ typedef NS_ENUM(NSUInteger, AISKOrient) {
     // 如果移动后蛇头超出界面或与蛇身碰撞，游戏结束
     if(head.pointX < 0 || head.pointX > WIDTH - 1
        || head.pointY < 0 || head.pointY > HEIGHT - 1
-       || [self.skNodeArr containsObject:head]) {
+       || [self containsAISKNode:head]) {
         // 播放碰撞的音效
         AudioServicesPlaySystemSound(crash);
         [self.overAlert show];
@@ -202,6 +202,23 @@ typedef NS_ENUM(NSUInteger, AISKOrient) {
                 self.orient = kAISKRight;
             break;
     }
+}
+
+- (BOOL)containsAISKNode:(AISKNode*)headNode {
+    BOOL contain = NO;
+    for (AISKNode* node in self.skNodeArr) {
+//        NSLog(@"headNode.pointX %ld",headNode.pointX);
+//        NSLog(@"headNode.pointY %ld",headNode.pointY);
+//        
+//        NSLog(@"node.pointX %ld",node.pointX);
+//        NSLog(@"node.pointY %ld",node.pointY);
+        
+        if ([node isEqualSKNode:headNode]) {
+            contain = YES;
+            break;
+        }
+    }
+    return contain;
 }
 
 - (void)alertView:(UIAlertView *)alertView

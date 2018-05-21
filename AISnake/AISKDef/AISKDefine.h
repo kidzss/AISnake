@@ -10,10 +10,12 @@
 #define AISKDefine_h
 
 // 记录地图上的宽和高有多少个格子
-#define WIDTH 26
-#define HEIGHT 26
+#define WIDTH 24
+#define HEIGHT 24
 // 定义每个格子的大小
-#define CELL_SIZE 10
+#define CELL_SIZE 15
+#define NODE_COUNT 5
+#define TIME 0.35
 #define SINGLE_LINE_WIDTH           (1 / [UIScreen mainScreen].scale)
 
 #endif /* AISKDefine_h */
