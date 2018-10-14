@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,6 @@
 		B0A2E0F920AFC3820066A98A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E0F820AFC3820066A98A /* AppDelegate.m */; };
 		B0A2E0FC20AFC3830066A98A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E0FB20AFC3830066A98A /* ViewController.m */; };
 		B0A2E0FF20AFC3830066A98A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A2E0FD20AFC3830066A98A /* Main.storyboard */; };
-		B0A2E10120AFC3850066A98A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A2E10020AFC3850066A98A /* Assets.xcassets */; };
 		B0A2E10420AFC3850066A98A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A2E10220AFC3850066A98A /* LaunchScreen.storyboard */; };
 		B0A2E10720AFC3850066A98A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E10620AFC3850066A98A /* main.m */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		B0A2E0FA20AFC3820066A98A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B0A2E0FB20AFC3830066A98A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B0A2E0FE20AFC3830066A98A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B0A2E10020AFC3850066A98A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0A2E10320AFC3850066A98A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0A2E10520AFC3850066A98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0A2E10620AFC3850066A98A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				B0A2E0FA20AFC3820066A98A /* ViewController.h */,
 				B0A2E0FB20AFC3830066A98A /* ViewController.m */,
 				B0A2E0FD20AFC3830066A98A /* Main.storyboard */,
-				B0A2E10020AFC3850066A98A /* Assets.xcassets */,
 				B0A2E10220AFC3850066A98A /* LaunchScreen.storyboard */,
 				B0A2E10520AFC3850066A98A /* Info.plist */,
 				B0A2E10620AFC3850066A98A /* main.m */,
@@ -152,11 +149,12 @@
 				TargetAttributes = {
 					B0A2E0F320AFC3820066A98A = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = B0A2E0EF20AFC3820066A98A /* Build configuration list for PBXProject "AISnake" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -179,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0A2E10420AFC3850066A98A /* LaunchScreen.storyboard in Resources */,
-				B0A2E10120AFC3850066A98A /* Assets.xcassets in Resources */,
 				B088B2DF20B11B8D00A3EF3F /* gu.mp3 in Resources */,
 				B088B2E020B11B8D00A3EF3F /* crash.wav in Resources */,
 				B0A2E0FF20AFC3830066A98A /* Main.storyboard in Resources */,
@@ -341,10 +338,7 @@
 				DEVELOPMENT_TEAM = 57U2YD86GW;
 				INFOPLIST_FILE = AISnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.AISnake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,10 +353,7 @@
 				DEVELOPMENT_TEAM = 57U2YD86GW;
 				INFOPLIST_FILE = AISnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.AISnake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
